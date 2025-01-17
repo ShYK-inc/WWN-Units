@@ -1,0 +1,166 @@
+[core]
+name: NULL
+class: CustomUnitMetadata
+dont_load: true
+
+[effect_GIPER]
+life:0
+alsoEmitEffects: CUSTOM:WOWg, CUSTOM:GI*10,CUSTOM:s1g,CUSTOM:CRg,CUSTOM:ZAREVOg,CUSTOM:ZAREVOgreen,CUSTOM:ZARflg
+spawnChance: 1
+	createWhenOffscreen:true
+	showInFog: true
+	alsoPlaySound: ROOT:\OGG\GIPER.ogg
+[effect_CRg]
+	priority:critical
+	createWhenOverLand:true
+	createWhenOverLiquid:false
+	image:ROOT:common\scorch_mark_nuke.png
+	life: 40000
+	fadeOut: true
+	scaleFrom: 3
+	scaleTo: 3
+	alpha:1
+	drawUnderUnits:true
+	createWhenOffscreen:true
+	showInFog: true
+	[effect_WOWg]
+image:ROOT:common\Gipe.png
+life: 2000
+priority: critical
+scaleFrom: 0.3
+scaleTo: 1
+dirOffset:0
+dirOffsetRandom:359
+alpha:5
+attachedToUnit:false
+	createWhenOffscreen:true
+	showInFog: true
+[effect_GI]
+	image:ROOT:common\Gi.png
+life: 2200
+scaleFrom: 0.5
+scaleTo: 1.5
+#physics: true
+#physicsGravity: 0.015
+dirOffset:0
+dirOffsetRandom:60
+hSpeed: 0.2
+hSpeedRandom: 0.1
+xOffsetAbsoluteRandom:100
+yOffsetAbsoluteRandom:100
+ySpeedRelativeRandom: 0.2
+xSpeedRelativeRandom: 0.2
+alpha:8
+fadeOut:true
+attachedToUnit:false
+	showInFog: true
+[effect_ZAREVOg]
+priority: critical
+	image: ROOT:common\light_400.png
+	life: 1500
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 16
+	scaleTo: 0
+	alpha: 20
+	drawUnderUnits:false
+	createWhenOffscreen:true
+	showInFog: true
+[effect_ZAREVOgreen]
+priority: critical
+	image: ROOT:common\light_400.png
+	life: 2000
+	fadeOut: true
+	attachedToUnit: true
+	color: #0ee647
+	fadeInTime:0.001
+	scaleFrom: 16
+	scaleTo: 0
+	alpha: 20
+	drawUnderUnits:false
+	createWhenOffscreen:true
+	showInFog: true
+[effect_ZARflg]
+priority: critical
+	image: ROOT:common\FlareWhite.png
+	life: 1500
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 16
+	scaleTo: 0
+	dirOffset:0
+	alpha: 15
+	drawUnderUnits:false
+	createWhenOffscreen:true
+	showInFog: true
+
+[effect_s1g]
+alsoEmitEffects:CUSTOM:w2g,CUSTOM:w1g,CUSTOM:deathshockwaveg,CUSTOM:ww
+createWhenZoomedOut: true
+priority:critical
+alwayStartDirAtZero:true
+image:ROOT:common\flash.png
+life: 600
+fadeOut: true
+attachedToUnit: false
+color: #FFFF6B
+fadeInTime:2
+scaleFrom: 4
+scaleTo: 4.2
+alpha: 1
+drawUnderUnits:false
+ySpeedRelative:0.2
+atmospheric: false
+alsoPlaySound:nuke_explode:1.0
+	createWhenOffscreen:true
+	showInFog: true
+[effect_w1g]
+priority: critical
+life:700
+image:ROOT:common\shockwave_large.png
+scaleFrom:0
+scaleTo:9
+#color:#8f6353
+	createWhenOffscreen:true
+	showInFog: true
+
+[effect_deathshockwaveg]
+life: 1500
+priority: critical
+image:ROOT:common\shockwave_large.png
+scaleTo: 15
+scaleFrom: 0
+attachedToUnit: false
+	createWhenOffscreen:true
+	showInFog: true
+
+[effect_w2g]
+priority: critical
+life: 55
+image:ROOT:common\shockwave_large.png
+scaleFrom: 0
+scaleTo: 10
+	createWhenOffscreen:true
+	showInFog: true
+	
+[effect_ww]
+#displacement type ignored if postprocessing is not enabled
+drawType: displacement
+
+image: ROOT:common\shockwave_normal_400.png
+life: 1300
+fadeOut: true
+fadeInTime: 1000
+
+attachedToUnit: false
+color: #FFFFFF
+scaleFrom: 0
+scaleTo: 9
+alpha: 0.85
+drawUnderUnits:false
+
+alwayStartDirAtZero: true

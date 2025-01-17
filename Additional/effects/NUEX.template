@@ -1,0 +1,147 @@
+[core]
+name: NULL
+class: CustomUnitMetadata
+dont_load: true
+
+[effect_NUEX]
+life:0
+alsoEmitEffects: CUSTOM:WOW, CUSTOM:UP,CUSTOM:s1,CUSTOM:CR,CUSTOM:ZAREVO,CUSTOM:ZARfl
+spawnChance: 1
+	createWhenOffscreen:true
+	showInFog: true
+[effect_CR]
+	priority:critical
+	createWhenOverLand:true
+	createWhenOverLiquid:false
+	image:ROOT:common\scorch_mark_nuke.png
+	life: 20000
+	fadeOut: true
+	scaleFrom: 1
+	scaleTo: 1
+	alpha:1
+	drawUnderUnits:true
+	createWhenOffscreen:true
+	showInFog: true
+	[effect_WOW]
+image:ROOT:common\Nuclear(Matryoshka Brain).png
+life: 900
+priority: critical
+scaleFrom: 0.3
+scaleTo: 0.9
+dirOffset:0
+dirOffsetRandom:359
+alpha:5
+attachedToUnit:false
+	createWhenOffscreen:true
+	showInFog: true
+[effect_UP]
+	image:ROOT:common\Nuclear.png
+priority: critical
+life: 1000
+scaleFrom: 0.3
+scaleTo: 0.9
+dirOffset:0
+dirOffsetRandom:359
+hSpeed: 0.17
+hSpeedRandom: 0.07
+yOffsetAbsolute:30
+alpha:2
+attachedToUnit:false
+	createWhenOffscreen:true
+	showInFog: true
+[effect_ZAREVO]
+priority: critical
+	image: ROOT:common\light_400.png
+	life: 600
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 7
+	scaleTo: 0
+	alpha: 20
+	drawUnderUnits:false
+	createWhenOffscreen:true
+	showInFog: true
+[effect_ZARfl]
+priority: critical
+	image: ROOT:common\FlareWhite.png
+	life: 600
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 3
+	scaleTo: 0
+	dirOffset:0
+	alpha: 15
+	drawUnderUnits:false
+	createWhenOffscreen:true
+	showInFog: true
+
+[effect_s1]
+alsoEmitEffects:CUSTOM:w2,CUSTOM:w1,CUSTOM:deathshockwave,CUSTOM:ww
+createWhenZoomedOut: true
+priority:critical
+alwayStartDirAtZero:true
+image:ROOT:common\flash.png
+life: 300
+fadeOut: true
+attachedToUnit: false
+color: #FFFF6B
+fadeInTime:2
+scaleFrom: 2
+scaleTo: 2.1
+alpha: 1
+drawUnderUnits:false
+ySpeedRelative:0.2
+atmospheric: false
+alsoPlaySound:nuke_explode:1.0
+	createWhenOffscreen:true
+	showInFog: true
+[effect_w1]
+priority: critical
+life:100
+image:ROOT:common\shockwave_large.png
+scaleFrom:0
+scaleTo:3
+#color:#8f6353
+	createWhenOffscreen:true
+	showInFog: true
+
+[effect_deathshockwave]
+life: 700
+priority: critical
+image:ROOT:common\shockwave_large.png
+scaleTo: 5
+scaleFrom: 0
+attachedToUnit: false
+	createWhenOffscreen:true
+	showInFog: true
+
+[effect_w2]
+priority: critical
+life: 25
+image:ROOT:common\shockwave_large.png
+scaleFrom: 0
+scaleTo: 5
+	createWhenOffscreen:true
+	showInFog: true
+	
+[effect_ww]
+#displacement type ignored if postprocessing is not enabled
+drawType: displacement
+
+image: ROOT:common\shockwave_normal_400.png
+life: 600
+fadeOut: true
+fadeInTime: 400
+
+attachedToUnit: false
+color: #FFFFFF
+scaleFrom: 0
+scaleTo: 4
+alpha: 0.5
+drawUnderUnits:false
+
+alwayStartDirAtZero: true

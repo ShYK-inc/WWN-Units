@@ -1,0 +1,97 @@
+[core]
+name: NULL
+class: CustomUnitMetadata
+dont_load: true
+
+[effect_HeFl]
+life:0
+alsoEmitEffects: CUSTOM:HF,CUSTOM:HFs1*6,CUSTOM:HFs2*6,CUSTOM:HF2,CUSTOM:wait
+spawnChance: 1
+
+[effect_HF]
+	image: ROOT:common\light_51.png
+	life: 100
+	spawnChance: 1
+	delayedStartTimer:5
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.4
+	scaleTo: 0.4
+	alpha: 10
+	drawUnderUnits:true
+	dirOffsetRandom: 180
+	#color:#ff9e0d
+	#dirSpeedRandom: 0.1
+	xSpeedRelative:0.9
+	ySpeedRelative:0.2
+	atmospheric: true
+[effect_HF2]
+	image: ROOT:common\light_51.png
+	life: 100
+	spawnChance: 1
+	delayedStartTimer:5
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.4
+	scaleTo: 0.4
+	alpha: 10
+	drawUnderUnits:true
+	dirOffsetRandom: 180
+	#color:#ff9e0d
+	#dirSpeedRandom: 0.1
+	xSpeedRelative:-0.9
+	ySpeedRelative:0.2
+	atmospheric: true
+[effect_wait]
+	life: 10
+	spawnChance: 1
+	alsoEmitEffectsOnDeath:CUSTOM:HF,CUSTOM:HF2,CUSTOM:HFs1*10,CUSTOM:HFs2*10
+
+[effect_HFs1]
+	stripIndex: smoke_white
+	#stripIndex: effects
+	frameIndex: 0
+	#delayedStartTimer:5
+	life: 120
+	fadeOut: true
+	attachedToUnit: false
+	color: #000000
+	fadeInTime:5
+	scaleFrom: 0.2
+	scaleTo: 0.8
+	alpha: 0.3
+	drawUnderUnits:false
+	#atmospheric:true
+
+	dirOffsetRandom:180
+
+	shadow:true
+	xSpeedRelative:0.5
+	ySpeedRelative:0.1
+	xSpeedRelativeRandom:0.2
+	ySpeedRelativeRandom:0.2
+[effect_HFs2]
+	stripIndex: smoke_white
+	#stripIndex: effects
+	frameIndex: 0
+	#delayedStartTimer:5
+	life: 120
+	fadeOut: true
+	attachedToUnit: false
+	color: #000000
+	fadeInTime:5
+	scaleFrom: 0.2
+	scaleTo: 0.8
+	alpha: 0.3
+	drawUnderUnits:false
+	#atmospheric:true
+
+	dirOffsetRandom:180
+
+	shadow:true
+	xSpeedRelative:-0.5
+	ySpeedRelative:0.1
+	xSpeedRelativeRandom:0.2
+	ySpeedRelativeRandom:0.2

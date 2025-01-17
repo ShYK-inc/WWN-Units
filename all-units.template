@@ -1,0 +1,815 @@
+
+[core]
+strictLevel: 1
+logIfCreditResourceUsed:true
+
+[global_resource_потери]
+displayName: Losses
+displayNameShort: LS
+priority: 5
+displayColor: #ff3d3d
+
+[global_resource_номер]
+displayName: Combat Number
+displayNameShort: CN
+priority: 6
+displayColor: #ffffff
+hidden:true
+
+[global_resource_power]
+displayName: Energocredits
+displayNameShort: Ec
+hidden: false
+priority: -1
+displayColor: yellow
+displayTextAppendResource: powerMax
+displayRoundedDown:true
+
+[global_resource_powerMax]
+#global resource, shared with all units on team
+displayName:
+hidden: true
+priority: -1
+displayTextPrefix:/
+displayColor: yellow
+displayRoundedDown:true
+
+[global_resource_AImod]
+displayName: AImod
+hidden: true
+[global_resource_AImod2]
+displayName: AImod2
+hidden: true
+[global_resource_AItech]
+displayName: AItech
+hidden: true
+[global_resource_Rnd]
+displayName: Rnd
+hidden: true
+
+[resource_StunP]
+displayName: Stunp
+
+	[effect_trail]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\trailNoColor.png
+	life: 30
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha: 0.5
+	drawUnderUnits:true
+	ySpeedRelative:0.2	
+
+[effect_trailF]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\OG.png
+	life: 10
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha: 0.8
+	drawUnderUnits:true
+	ySpeedRelative:0.2
+
+
+[effect_trailLLL]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: SHARED:light_50.png
+	life: 10
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.3
+	scaleTo: 0.5
+	alpha: 0.3
+	color:#ffcc00
+	drawUnderUnits:true
+	ySpeedRelative:0.2
+
+
+
+[effect_ArtBUM]
+	stripIndex: smoke_white
+	frameIndex: 0
+	life: 300
+	fadeOut: true
+	#color: #FFFFFF
+	color: #FF5e5353
+	fadeInTime:50
+	scaleFrom: 2
+	scaleTo: 3
+	alpha: 5
+	drawUnderUnits:true
+	atmospheric:true
+	#createWhenOverLand:true
+	dirOffsetRandom:180
+	attachedToUnit:false
+
+[effect_ArtWAT]
+	image: ROOT:\common\water.png
+	life: 250
+	fadeOut: true
+	fadeInTime:20
+	scaleFrom: 1
+	scaleTo: 1.3
+	alpha: 5
+	drawUnderUnits:true
+	#atmospheric:true
+	createWhenOverLand:false
+	dirOffsetRandom:20
+	dirOffset:180
+	attachedToUnit:false
+
+	[effect_trail2]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\trailNoColor2.png
+	life: 30
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha: 0.5
+	drawUnderUnits:true
+	ySpeedRelative:0.2	
+
+[effect_trailF2]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\OG2.png
+	life: 10
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.35
+	scaleTo: 0.35
+	alpha: 0.8
+	drawUnderUnits:true
+	ySpeedRelative:0.2
+
+	[effect_trail3]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\trailNoColor3.png
+	life: 40
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha: 0.5
+	drawUnderUnits:true
+	ySpeedRelative:0.2	
+	
+	[effect_trail5]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\trailNoColor5.png
+	life: 40
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha: 0.5
+	drawUnderUnits:true
+	ySpeedRelative:0.2	
+
+[effect_trailF3]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\OG33.png
+	life: 15
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.35
+	scaleTo: 0.35
+	alpha: 0.8
+	drawUnderUnits:true
+	ySpeedRelative:0.2
+
+	[effect_trail4]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\trailNoColor4.png
+	life: 70
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha: 0.5
+	drawUnderUnits:true
+	ySpeedRelative:0.2	
+
+[effect_trailF4]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\OG44.png
+	life: 25
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.35
+	scaleTo: 0.35
+	alpha: 0.8
+	drawUnderUnits:true
+	ySpeedRelative:0.2
+	
+[effect_trailF5]
+			
+	createWhenZoomedOut: false
+	priority:low
+	xOffsetRelative:0
+	yOffsetRelative:0
+	image: ROOT:\common\OG55.png
+	life: 25
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:1
+	scaleFrom: 0.35
+	scaleTo: 0.35
+	alpha: 0.8
+	drawUnderUnits:true
+	ySpeedRelative:0.2
+
+#Hawko
+
+[effect_waterSplash]
+life:0
+alsoEmitEffects: CUSTOM:waveUS,CUSTOM:waveSd, CUSTOM:wat,CUSTOM:waterSplash1, CUSTOM:waterSplash2, CUSTOM:waterSplash3, CUSTOM:waterSplash4*5, CUSTOM:waterSplash5*4
+createWhenOverLand: false
+spawnChance: 1
+
+[effect_waveUS]
+life:35
+image: ROOT:common\shockwave.png
+scaleFrom: 0
+scaleTo: 1.5
+createWhenOverLand: false
+alpha: 0.2
+attachedToUnit:false
+
+[effect_wat]
+life:200
+image: ROOT:common\rotorwash.png
+scaleFrom: 0.3
+scaleTo: 1
+createWhenOverLand: false
+alpha: 1
+attachedToUnit:false
+
+[effect_waterSplash1]
+life: 100
+image: ROOT:common\bubbles.png
+scaleFrom: 0.2
+scaleTo: 2
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+xSpeedAbsolute: 0.1
+xSpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: 3
+dirOffset:45
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:common\bubbles.png
+shadow: true
+attachedToUnit:false
+
+[effect_waterSplash2]
+life: 100
+image: ROOT:common\bubbles.png
+scaleFrom: 0.2
+scaleTo: 2
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: -3
+dirOffset:135
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:common\bubbles.png
+shadow: true
+attachedToUnit:false
+
+[effect_waterSplash3]
+life: 100
+image: ROOT:common\sub_bubbles.png
+scaleFrom: 0.2
+scaleTo: 2
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: -3
+xOffsetRelativeRandom: 0
+dirOffset:45
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:common\sub_bubbles.png
+shadow: true
+attachedToUnit:false
+
+[effect_waterSplash4]
+life: 300
+image: ROOT:common\waterUP.png
+scaleFrom: 0.2
+scaleTo: 2
+physics: true
+physicsGravity: 0.15
+dirOffset:0
+dirOffsetRandom:20
+hSpeed: 0.8
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.2
+xSpeedRelativeRandom: 0.2
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:common\waterUP.png
+shadow: true
+attachedToUnit:false
+
+[effect_waterSplash5]
+life: 300
+image: ROOT:common\bubbles.png
+alpha:1
+scaleFrom: 0.2
+scaleTo: 4
+physics: true
+physicsGravity: 0.1
+dirOffset:0
+dirOffsetRandom:20
+hSpeed: 0.8
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.2
+xSpeedRelativeRandom: 0.2
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:common\bubbles.png
+shadow: true
+attachedToUnit:false
+
+
+
+[effect_DIRbum]
+life:0
+alsoEmitEffects: CUSTOM:waveSUS,CUSTOM:ArtBUM,CUSTOM:waveSd,CUSTOM:Splash1, CUSTOM:Splash2, CUSTOM:Splash3*4, CUSTOM:Splash4*3, CUSTOM:Splash5*5, CUSTOM:dust,CUSTOM:LIto
+spawnChance: 1
+
+[effect_waveSd]
+#displacement type ignored if postprocessing is not enabled
+drawType: displacement
+
+image: SHARED:shockwave_normal_128.png
+life: 25
+fadeOut: true
+fadeInTime: 5
+
+attachedToUnit: false
+color: #FFFFFF
+scaleFrom: 0
+scaleTo: 2.0
+alpha: 0.05
+drawUnderUnits:false
+
+alwayStartDirAtZero: true
+
+[effect_waveSUS]
+life:35
+image: ROOT:common\shockwave.png
+scaleFrom: 0
+scaleTo: 1.5
+alpha: 0.2
+attachedToUnit:false
+alsoPlaySound:ROOT:OGG\yyyBUM.ogg
+
+[effect_Splash1]
+life: 100
+image: ROOT:common\Dirght.png
+color:#986800
+scaleFrom: 1
+scaleTo: 2
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+xSpeedAbsolute: 0.1
+xSpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: 3
+dirOffset:45
+createWhenOverLiquid: false
+imageShadow: SHADOW:ROOT:common\Dirght.png
+shadow: true
+attachedToUnit:false
+
+[effect_Splash2]
+life: 100
+image: ROOT:common\Dirght.png
+scaleFrom: 1
+scaleTo: 2
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: -3
+dirOffset:135
+createWhenOverLiquid: false
+imageShadow: SHADOW:ROOT:common\Dirght.png
+shadow: true
+attachedToUnit:false
+
+[effect_Splash3]
+life: 200
+image: ROOT:common\Dirght.png
+scaleFrom: 0.2
+scaleTo: 4
+physics: true
+physicsGravity: 0.15
+dirOffset:0
+dirOffsetRandom:20
+hSpeed: 0.8
+hSpeedRandom: 0.5
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: -3
+xOffsetRelativeRandom: 0
+dirOffset:45
+createWhenOverLiquid: false
+imageShadow: SHADOW:ROOT:common\Dirght.png
+shadow: true
+attachedToUnit:false
+
+[effect_Splash4]
+life: 200
+image: ROOT:common\waterUP.png
+color:#271b00
+scaleFrom: 0.2
+scaleTo: 1.5
+physics: true
+physicsGravity: 0.1
+dirOffset:0
+dirOffsetRandom:20
+hSpeed: 0.8
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.2
+xSpeedRelativeRandom: 0.2
+createWhenOverLiquid: false
+imageShadow: SHADOW:ROOT:common\waterUP.png
+shadow: true
+attachedToUnit:false
+
+[effect_Splash5]
+life: 200
+stripIndex: smoke_white
+color:#271b00
+scaleFrom: 0.2
+scaleTo: 1.5
+physics: true
+physicsGravity: 0.15
+dirOffset:0
+dirOffsetRandom:20
+hSpeed: 0.8
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.2
+xSpeedRelativeRandom: 0.2
+createWhenOverLiquid: false
+#imageShadow: SHADOW:ROOT:common\waterUP.png
+shadow: true
+attachedToUnit:false
+
+[effect_LIto]
+	image: SHARED:light_50.png
+	life: 60
+	fadeOut: true
+	attachedToUnit:false
+	color: #ffc000
+	fadeInTime:0.001
+	scaleFrom: 2.5
+	scaleTo: 0.1
+	alpha: 0.3
+	drawUnderUnits:false
+
+[effect_Cratat]
+	priority:high
+	createWhenOverLiquid:false
+	image: ROOT:common\Crater.png
+	life: 15000
+	fadeOut: true
+	scaleFrom: 0.3
+	scaleTo: 0.3
+	alpha:1
+	drawUnderUnits:true
+	attachedToUnit:false
+[effect_TRbum]
+life:0
+alsoEmitEffects: CUSTOM:waveSUS,CUSTOM:waveSd, CUSTOM:CratUS,CUSTOM:Splash1, CUSTOM:Splash2, CUSTOM:Splash3, CUSTOM:Splash4*3, CUSTOM:Splash05*3,CUSTOM:waterSplash4*3, CUSTOM:SiZa,
+spawnChance: 1
+[effect_CratUS]
+	priority:high
+	createWhenOverLand:true
+	createWhenOverLiquid:false
+	image:ROOT:common\TactEexp.png
+	life: 20000
+	fadeOut: true
+	scaleFrom: 0.5
+	scaleTo: 0.5
+	alpha:1
+	drawUnderUnits:true
+	attachedToUnit:false
+[effect_Splash05]
+life: 80
+image: ROOT:common\chargesparks.png
+alpha:3
+scaleFrom: 0
+scaleTo: 0.4
+dirOffset:0
+dirOffsetRandom:359
+attachedToUnit:false
+
+[effect_SiZa]
+life:50
+image: ROOT:common\rotorwash.png
+scaleFrom: 0
+scaleTo: 1
+color:#42f2f5
+alpha: 3
+attachedToUnit:false
+
+[effect_SWbum]
+life:0
+alsoEmitEffects: CUSTOM:waveSUS,CUSTOM:waveSd, CUSTOM:Cratat,CUSTOM:Splash1, CUSTOM:Splash2, CUSTOM:Splash3, CUSTOM:Splash4*3,CUSTOM:waterSplash4*3, CUSTOM:SiZa2
+spawnChance: 1
+
+[effect_SiZa2]
+life:60
+image: ROOT:common\rotorwash.png
+scaleFrom: 0
+scaleTo: 1.2
+color:#fc0000
+alpha: 2
+attachedToUnit:false
+
+[effect_dust]
+	stripIndex: smoke_white
+	frameIndex: 0
+	life: 500
+	fadeOut: true
+	#color: #FFFFFF
+	color: #515151
+	fadeInTime:10
+	scaleFrom: 1
+	scaleTo: 3
+	alpha: 10
+	drawUnderUnits:false
+	atmospheric:false
+	dirOffsetRandom:180
+	attachedToUnit:false
+
+	[projectile_ZAHVAT]
+	life: 300
+	speed: 2
+	drawSize: 0.7
+	hitSound: false
+	directDamage: 20
+	convertHitToSourceTeam:true
+	targetGround:false
+	targetGroundSpread: 0
+	largeHitEffect: false
+	deflectionPower: -1
+	image: ROOT:\common\ZAHVAT.png
+	autoTargetingOnDeadTarget:true
+	autoTargetingOnDeadTargetLead: 2
+
+
+[effect_FERspShipD2]
+life:0
+alsoEmitEffects: CUSTOM:Oblw2,CUSTOM:Obls2b*5,CUSTOM:Obls2*4,CUSTOM:ZARengF,CUSTOM:EngF2*2,EngF23,EngF232,EngF24,EngF25
+spawnChance: 0.7
+
+[effect_Oblw2]
+priority: high
+life:100
+image:ROOT:common\shockwave_large.png
+scaleFrom:0
+scaleTo:2
+	#createWhenOffscreen:true
+	#showInFog: true
+
+
+[effect_Obls2b]
+life: 1000
+spawnChance: 0.8
+image: ROOT:common\Obl0.png
+alpha:5
+scaleFrom: 0.1
+scaleTo: 0.2
+dirOffsetRandom:359
+attachedToUnit:false
+xSpeedRelativeRandom:0.2
+ySpeedRelativeRandom:0.2
+yOffsetRelative: -45
+	
+[effect_Obls2]
+life: 2100
+spawnChance: 0.9
+image: ROOT:common\Obl0.png
+alpha:5
+scaleFrom: 0.1
+scaleTo: 0.2
+dirOffsetRandom:359
+attachedToUnit:false
+xSpeedRelativeRandom:0.1
+ySpeedRelativeRandom:0.1
+yOffsetRelative: -45
+delayedStartTimer:5s
+
+[effect_ZARengF]
+	image: ROOT:common\light_400.png
+	life: 700
+	fadeOut: true
+	attachedToUnit: false
+	color: #fcc600
+	fadeInTime:0.001
+	scaleFrom: 2
+	scaleTo: 0
+	alpha: 2
+	drawUnderUnits:false
+	yOffsetRelative: -45
+	
+[effect_EngF2]
+	image: ROOT:common\EngF.png
+	life: 1800
+	spawnChance: 1
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:120
+	scaleFrom: 0.5
+	scaleTo: 3
+	alpha: 0.75
+	drawUnderUnits:false
+	yOffsetRelative: -45
+	dirOffsetRandom: 360
+	dirSpeedRandom: 0.02
+	
+[effect_EngF23]
+@copyFromSection:effect_EngF2
+delayedStartTimer:3s
+	life: 500
+	scaleFrom: 0
+	
+[effect_EngF232]
+@copyFromSection:effect_EngF2
+delayedStartTimer:4s
+	life: 500
+	scaleFrom: 0
+
+[effect_EngF24]
+@copyFromSection:effect_EngF2
+delayedStartTimer:5s
+	scaleFrom: 0
+
+[effect_EngF25]
+@copyFromSection:effect_EngF2
+delayedStartTimer:8s
+	scaleFrom: 0
+	
+[effect_FERspShipD1]
+life:0
+alsoEmitEffects: CUSTOM:Oblw2,CUSTOM:Obls1b*5,CUSTOM:Obls1*4,CUSTOM:ZARengF1,CUSTOM:EngF1*3,CUSTOM:EngF13*3,CUSTOM:ChpF1*5
+spawnChance: 0.7
+
+
+[effect_Obls1b]
+life: 1000
+spawnChance: 0.8
+image: ROOT:common\Obl0.png
+alpha:5
+scaleFrom: 0.1
+scaleTo: 0.22
+dirOffsetRandom:359
+attachedToUnit:false
+xSpeedRelativeRandom:0.2
+ySpeedRelativeRandom:0.2
+	xOffsetAbsoluteRandom:20
+	yOffsetAbsoluteRandom:20
+
+[effect_ChpF1]
+life: 1000
+spawnChance: 0.8
+image: ROOT:common\chargesparks.png
+alpha:5
+scaleFrom: 0.1
+scaleTo: 0.8
+dirOffsetRandom:359
+attachedToUnit:false
+xSpeedRelativeRandom:0.1
+ySpeedRelativeRandom:0.1
+	color: #00a8ff
+	xOffsetAbsoluteRandom:20
+	yOffsetAbsoluteRandom:20
+	
+[effect_Obls1]
+life: 2100
+spawnChance: 0.9
+image: ROOT:common\Obl0.png
+alpha:5
+scaleFrom: 0.1
+scaleTo: 0.22
+dirOffsetRandom:359
+attachedToUnit:false
+xSpeedRelativeRandom:0.1
+ySpeedRelativeRandom:0.1
+delayedStartTimer:5s
+
+[effect_ZARengF1]
+	image: ROOT:common\light_400.png
+	life: 700
+	fadeOut: true
+	attachedToUnit: false
+	color: #00a8ff
+	fadeInTime:0.001
+	scaleFrom: 2
+	scaleTo: 0
+	alpha: 2
+	drawUnderUnits:false
+	
+[effect_EngF1]
+	image: ROOT:common\EngF2.png
+	life: 600
+	spawnChance: 1
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:120
+	scaleFrom: 0.2
+	scaleTo: 3
+	alpha: 0.75
+	drawUnderUnits:false
+	dirOffsetRandom: 360
+	dirSpeedRandom: 0.02
+	
+[effect_EngF13]
+@copyFromSection:effect_EngF1
+delayedStartTimer:4s
+
+
+[effect_ZARengP1]
+	image: ROOT:common\light_400.png
+	life: 700
+	fadeOut: true
+	attachedToUnit: false
+	color: #ff6868
+	fadeInTime:0.001
+	scaleFrom: 2
+	scaleTo: 0
+	alpha: 2
+	drawUnderUnits:false
+	
+[effect_EngP1]
+	image: ROOT:common\EngF3.png
+	life: 600
+	spawnChance: 1
+	fadeOut: true
+	attachedToUnit: false
+	fadeInTime:120
+	scaleFrom: 0.2
+	scaleTo: 3
+	alpha: 0.75
+	drawUnderUnits:false
+	dirOffsetRandom: 360
+	dirSpeedRandom: 0.02

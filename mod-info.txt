@@ -1,0 +1,11 @@
+[mod]
+title:WarWorldNationals beta v1.1.5
+description: WWN was once an invented board game, now a mod and a whole universe. Play with us, learn the lore and the development process of our projects on our discord server. Watch videos about our mods on our channels. Report all bugs and inaccuracies to our server.
+
+tags: units, Total Conversion, mod, space, soldier, infantry, tanks, ships, WWN, map, bots, mechs, walkers
+
+thumbnail: mod-thumbnail.png
+
+[music]
+sourceFolder: music
+whenUsingUnitsFromThisMod_playExclusively: true

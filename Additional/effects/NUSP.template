@@ -1,0 +1,59 @@
+[core]
+name: NULL
+class: CustomUnitMetadata
+dont_load: true
+
+[effect_NUSP]
+life:0
+alsoEmitEffects: CUSTOM:WOW2,CUSTOM:ZAREVO2,CUSTOM:ZARfl2,CUSTOM:w12,CUSTOM:w22
+spawnChance: 1
+
+	[effect_WOW2]
+image:ROOT:common\Nuclear(Matryoshka Brain).png
+life: 250
+priority: critical
+scaleFrom: 0
+scaleTo: 0.5
+dirOffset:0
+dirOffsetRandom:359
+alpha:3
+alsoPlaySound:..\..\..\OGG\BSG.ogg
+
+[effect_ZAREVO2]
+	image: ROOT:common\light_400.png
+	life: 150
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 4
+	scaleTo: 0
+	alpha: 20
+	drawUnderUnits:false
+[effect_ZARfl2]
+	image: ROOT:common\FlareWhite.png
+	life: 150
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 2
+	scaleTo: 0
+	dirOffset:0
+	alpha: 15
+	drawUnderUnits:false
+
+
+[effect_w12]
+life:100
+image:ROOT:common\shockwave_large.png
+scaleFrom:0
+scaleTo:2
+#color:#8f6353
+
+[effect_w22]
+life: 25
+image:ROOT:common\shockwave_large.png
+scaleFrom: 0
+scaleTo: 3
+

@@ -1,0 +1,51 @@
+[resource_Stun]
+hidden: true
+
+[turret_Stun]
+canShoot:false
+invisible: true
+x: 0
+y: 0
+projectile:Stun
+onShoot_freezeBodyMovementFor:1s
+shoot_flame:CUSTOM:StEff,CUSTOM:ZAREVO2
+size:0
+
+[projectile_Stun]
+invisible:true
+directDamage:0
+life: 120
+speed: 6
+explodeEffect: NONE
+
+[hiddenAction_maxStun]
+autoTrigger:if self.resource(type='Stun',greaterThan=8)
+resourceAmount:Stun
+resourceAmount_setValue:8
+autoTriggerCheckRate:every8Frames
+
+[hiddenAction_StunDownRate]
+autoTrigger:if self.resource(type='Stun',greaterThan=0)
+addResources:Stun=-2
+fireTurretXAtGround:Stun
+autoTriggerCheckRate:every8Frames
+
+[effect_StEff]
+life: 30
+image: ROOT:common\chargesparks.png
+alpha:5
+scaleFrom: 0
+scaleTo: 0.3
+dirOffset:0
+dirOffsetRandom:359
+[effect_ZAREVO2]
+	image: ROOT:common\light_400.png
+	life: 70
+	fadeOut: true
+	attachedToUnit: true
+	color: #ffffff
+	fadeInTime:0.001
+	scaleFrom: 1
+	scaleTo: 0
+	alpha: 0.3
+	drawUnderUnits:false
